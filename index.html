@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Confirmation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Order Placed Successfully!</h1>
+    <p>Please select your preferred delivery method:</p>
+    <div class="btn-group">
+      <button onclick="selectDelivery('Normal')">Normal Delivery</button>
+      <button onclick="selectDelivery('Drone')">Drone Delivery</button>
+    </div>
+  </div>
+
+  <script>
+    function selectDelivery(method) {
+      alert("You selected: " + method + " Delivery");
+      // You can replace this alert with a redirect like:
+      // window.location.href = method.toLowerCase() + "-delivery.html";
+    }
+  </script>
+</body>
+</html>
